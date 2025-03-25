@@ -2,7 +2,6 @@
 ````markdown
 # 🤖 WEHEL24 - AI-Powered Personal Growth Coach
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/Kacabdev/wehel-bot)
 [![Telegram Bot](https://img.shields.io/badge/💬_Try_WEHEL24-Telegram-blue?logo=telegram)](https://t.me/WEHEL24)
 
 > Your 24/7 pocket mentor delivering actionable life advice through Telegram
