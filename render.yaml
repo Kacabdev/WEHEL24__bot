@@ -1,0 +1,10 @@
+# render.yaml
+services:
+  - type: web
+    name: wehel-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        value: 7606087963:AAHqL2seuQ2pyIipvb0xYfsCllYSZj1wKKo
