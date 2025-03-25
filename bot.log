@@ -1,0 +1,104 @@
+
+ERROR:root:Error: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Character '>' is reserved and must be escaped with the preceding '\'
+ERROR:TeleBot:Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Character '.' is reserved and must be escaped with the preceding '\'
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "c:\Users\QUZHEEC\desktop\abdurahman\pyhon practice\python_bot\bot.py", line 92, in send_advice
+    bot.send_message(message.chat.id, response)
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1800, in send_message
+    apihelper.send_message(
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 275, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Character '>' is reserved and must be escaped with the preceding '\'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 9233, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\QUZHEEC\desktop\abdurahman\pyhon practice\python_bot\bot.py", line 97, in send_advice
+    bot.reply_to(message, "\u26a0\ufe0f Couldn't fetch advice. Try again later.")
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 5949, in reply_to
+    return self.send_message(message.chat.id, text, reply_parameters=reply_parameters, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1800, in send_message
+    apihelper.send_message(
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 275, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Character '.' is reserved and must be escaped with the preceding '\'
+
+INFO:root:Sent advice to 5814414462: \U0001f4aa Confidence
+INFO:root:Sent advice to 5814414462: \U0001f9e0 Mindset
+INFO:root:Sent advice to 5814414462: \u2764\ufe0f Relationships
+INFO:root:Sent advice to 5814414462: \U0001f3b2 Random
+INFO:root:Sent advice to 5814414462: \U0001f680 Productivity
+INFO:root:Sent advice to 5814414462: \U0001f680 Productivity
+INFO:root:Sent advice to 5814414462: \u2764\ufe0f Relationships
+INFO:root:Sent advice to 5814414462: \U0001f680 Productivity
+ERROR:root:Error: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Character '>' is reserved and must be escaped with the preceding '\'
+ERROR:TeleBot:Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Character '.' is reserved and must be escaped with the preceding '\'
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "c:\Users\QUZHEEC\desktop\abdurahman\pyhon practice\python_bot\bot.py", line 88, in send_advice
+    bot.send_message(message.chat.id, advice)
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1800, in send_message
+    apihelper.send_message(
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 275, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Character '>' is reserved and must be escaped with the preceding '\'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 9233, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\QUZHEEC\desktop\abdurahman\pyhon practice\python_bot\bot.py", line 92, in send_advice
+    bot.send_message(
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1800, in send_message
+    apihelper.send_message(
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 275, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\QUZHEEC\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Character '.' is reserved and must be escaped with the preceding '\'
+
+INFO:root:Sent advice to 5814414462: \U0001f4aa Confidence
+INFO:root:Sent advice to 5814414462: \U0001f9e0 Mindset
+INFO:root:Sent advice to 5814414462: \U0001f3b2 Random
+INFO:root:Sent advice to 5814414462: \u2764\ufe0f Relationships
