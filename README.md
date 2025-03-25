@@ -1,4 +1,3 @@
-Here's a **professional, polished README.md** for your WEHEL24 Telegram bot repository, optimized for both technical and non-technical audiences:
 
 ````markdown
 # 🤖 WEHEL24 - AI-Powered Personal Growth Coach
