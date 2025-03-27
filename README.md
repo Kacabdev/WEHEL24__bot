@@ -2,7 +2,6 @@
 ````markdown
 # 🤖 WEHEL24 - AI-Powered Personal Growth Coach
 
-[![Telegram Bot](https://img.shields.io/badge/💬_Try_WEHEL24-Telegram-blue?logo=telegram)](https://t.me/WEHEL24)
 
 > Your 24/7 pocket mentor delivering actionable life advice through Telegram
 
